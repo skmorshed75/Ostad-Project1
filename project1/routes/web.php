@@ -35,10 +35,10 @@ Route::get('/socialData',[homeController::class,'socialData']); //home page
 Route::get('/projectsData',[projectController::class,'projectsData']);//project page
 
 Route::get('/resumeLink',[resumeController::class,'resumeLink']); //resume page
-Route::get('/experienceData',[resumeController::class,'experienceData']);//resume page
+Route::get('/experienceData',[resumeController::class,'experiencesData']);//resume page
 Route::get('/educationData',[resumeController::class,'educationData']);//resume page
 Route::get('/skillsData',[resumeController::class,'skillsData']);//resume page
 Route::get('/languageData',[resumeController::class,'languageData']);//resume page
 
-Route::get('/contactRequest',[contactController::class,'contactRequest']); //contact page
+Route::post('/contactRequest',[contactController::class,'contactRequest']); //contact page
 
